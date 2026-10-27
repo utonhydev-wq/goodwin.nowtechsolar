@@ -1,0 +1,6 @@
+{
+  "name": "Central NowTech Solar — GoodWe",
+  "description": "Central exclusiva para clientes da NowTech Solar acessarem o aplicativo oficial de monitoramento GoodWe SEMS+ no Android, iOS e Web.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B192C"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="solarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="50%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Accent -->
+  <circle cx="256" cy="256" r="190" stroke="white" stroke-opacity="0.08" stroke-width="2" stroke-dasharray="8 8"/>
+  <circle cx="256" cy="256" r="140" stroke="white" stroke-opacity="0.1" stroke-width="2"/>
+
+  <!-- Sun Energy Halo -->
+  <circle cx="256" cy="180" r="64" fill="url(#solarGrad)"/>
+  <circle cx="256" cy="180" r="82" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="6"/>
+
+  <!-- Solar Rays -->
+  <path d="M256 70V96M256 264V290M146 180H172M340 180H366M178 102L196 120M316 240L334 258M178 258L196 240M316 120L334 102" stroke="#FBBF24" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Photovoltaic Panel / Grid Geometry -->
+  <g transform="translate(128, 290)">
+    <!-- Base Panel Perspective -->
+    <path d="M20 120 L80 10 L176 10 L236 120 Z" fill="url(#panelGrad)" fill-opacity="0.95" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="3"/>
+    
+    <!-- Cell Grid Lines -->
+    <path d="M128 10 L128 120 M75 65 L181 65" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="2.5"/>
+    <path d="M52 10 L30 120 M204 10 L226 120" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1.5"/>
+  </g>
+</svg>
